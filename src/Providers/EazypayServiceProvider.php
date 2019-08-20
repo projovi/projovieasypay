@@ -1,11 +1,11 @@
 <?php
 
-namespace Projovi\Eazypay\Providers;
+namespace Projovi\ProjoviEazypay\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Projovi\Eazypay;
+use Projovi\ProjoviEazypay;
 
-class EazypayServiceProvider extends ServiceProvider
+class ProjoviEazypayServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -14,7 +14,7 @@ class EazypayServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([__DIR__.'/../../config/eazypay.php' => config_path('eazypay.php')], 'config');
+        $this->publishes([__DIR__.'/../../config/projovieazypay.php' => config_path('projovieazypay.php')], 'config');
     }
 
     /**
@@ -24,12 +24,12 @@ class EazypayServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $config = __DIR__ . '/../../config/eazypay.php';
-        $this->mergeConfigFrom($config, 'eazypay');
-        $this->app->singleton('Eazypay', Eazypay::class);
+        $config = __DIR__ . '/../../config/projovieazypay.php';
+        $this->mergeConfigFrom($config, 'projovieazypay');
+        $this->app->singleton('ProjoviEazypay', ProjoviEazypay::class);
     }
     public function provides()
     {
-        // return ['Eazypay'];
+        // return ['ProjoviEazypay'];
     }
 }

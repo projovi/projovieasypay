@@ -1,7 +1,7 @@
 <?php
-namespace Projovi\Eazypay;
+namespace Projovi\ProjoviEazypay;
 
-class Eazypay
+class ProjoviEazypay
 {
     public $merchant_id;
     public $encryption_key;
