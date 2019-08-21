@@ -14,12 +14,12 @@ class ProjoviEazypay
 
     public function __construct()
     {
-        $this->merchant_id              =    config('eazypay.merchant_id');
-        $this->encryption_key           =    config('eazypay.encryption_key');
-        $this->sub_merchant_id          =    config('eazypay.sub_merchant_id');
-        $this->merchant_reference_no    =    config('eazypay.merchant_reference_no');
-        $this->paymode                  =    config('eazypay.paymode');
-        $this->return_url               =    config('eazypay.return_url');
+        $this->merchant_id              =    config('projovieazypay.merchant_id');
+        $this->encryption_key           =    config('projovieazypay.encryption_key');
+        $this->sub_merchant_id          =    config('projovieazypay.sub_merchant_id');
+        $this->merchant_reference_no    =    config('projovieazypay.merchant_reference_no');
+        $this->paymode                  =    config('projovieazypay.paymode');
+        $this->return_url               =    config('projovieazypay.return_url');
     }
 
     public function getPaymentUrl($amount, $reference_no, $optionalField=null)
