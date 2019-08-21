@@ -1,5 +1,5 @@
 {
-    "name": "projovi/icicibankeazypay",
+    "name": "projovi/projovieazypay",
     "description": "This is icici eazypay payment gateway api",
     "keywords": [
       "laravel", "laravel 5", "icici", "icici payment", "eazypay", "laravel eazypay", "eazypay payment", "eazypay payment api","eazypay payment integration","eazypay payment laravel"
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Projovi\\Eazypay\\": "src/"
+            "Projovi\\ProjoviEazypay\\": "src/"
         }
     },
 
